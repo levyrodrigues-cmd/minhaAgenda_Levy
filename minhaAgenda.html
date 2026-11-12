@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+</head>
+<body>
+    <h1>Minha Agenda</h1>
+
+    <script>
+        let minhaAgenda = ["5 - Acordar", "7 - Ir à escola", "10 - Café da Manha", "13 - Voltar para Casa", "14 - Almoçar", "15 - Trabalhar", "21 - Dormir" ];
+        console.log(`Minha agenda amanhã: ${minhaAgenda}`);
+
+        //atributo para saber o comprimento do nosso vetor(array)
+        minhaAgenda.length
+        console.log(`Amanhã tenho ${minhaAgenda.length} tarefas pendentes.`);
+
+        console.log(`A primeira tarefa para amanhã é: ${minhaAgenda[0]}`);
+
+        //atributo utilizado para adicionar valor no vetor, onde não precisamos nos preocupar com a extensão
+        minhaAgenda.push("18 - Fazer Trabalhos Escolares Urgente");
+        console.log(minhaAgenda);
+
+        //para remover o primeiro item do array.
+        minhaAgenda.shift()
+        console.log(`Acordei: ${minhaAgenda}`);
+
+        //para remover o último item do array.
+        minhaAgenda.pop()
+        console.log(`Meu grupo já fez o trabalho: ${minhaAgenda}`);
+
+        //para acresentar o valor no vetor (precisa saber quantas posições existem no vetor)
+        minhaAgenda[4] = "15 - Hoje não irei trabalhar";
+        console.log(minhaAgenda);
+
+         //podemos colocar o vetor em ordem crescente
+        minhaAgenda.sort()
+        console.log(`Minha agenda organizada: ${minhaAgenda}`);
+
+    </script>
+</body>
+</html>
